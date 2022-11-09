@@ -3,104 +3,209 @@
 *{
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-color: #313335;
+    background-color: #32404d;
 }
 
 /*Header*/
 header{
-    background: #eff5fb;
+    background: #f0f2f5;
+    
     padding: 20px;
+    
+    transition: .5s;
 }
+.header:hover{
+    padding: 21px;
+}
+
 header h1{
-    color: #43474c;
+    color: #475a6c;
     text-align: center;
 }
 
 /*ScoreBoard*/
 .score-board{
-    margin: 30px auto;
+    border-radius: 10%;
     border: 3px solid #e7edf4;
+    
     width: 200px;
-    color: #e7edf4;
+    
+    margin: 30px auto;
+    padding: 15px 20px;
+    
     font-size: 40px;
     font-weight: bold;
-    border-radius: 10%;
+    
     text-align: center;
-    padding: 15px 20px;
+    color: #e7edf4;
     position: relative;
+    transition: .5s;
 }
+.score-board:hover{
+    border-radius: 11%;
+    border: 4px solid #e7edf4;
+    
+    width: 201px;
+    
+    margin: 31px auto;
+    padding: 16px 21px;
+    
+    font-size: 41px;
+}
+
 .badge{
     background: #c36060;
-    color: #e7edf4;
     border-radius: 10%;
-    font-size: 14px;
+    
     padding: 2px 10px;
+    
+    font-size: 14px;
+    
+    color: #e7edf4;
+    transition: .5s;
 }
+.badge:hover{
+    border-radius: 11%;
+    
+    padding: 3px 11px;
+    
+    font-size: 15px;
+}
+
 #user-label{
     position: absolute;
     top: 36px;
     left: -35px;
     font-weight: 0;
+    transition: .5s;
 }
+#user-label:hover{
+    top: 37px;
+    left: -36px;
+    font-weight: 1;
+}
+
 #computer-label{
     position: absolute;
     top: 36px;
     right: -25px;
     font-weight: 0;
+    transition: .5s;
+}
+#computer-label:hover{
+    top: 37px;
+    right: -26px;
+    font-weight: 1;
 }
 
 /*Results*/
 .result{
     font-size: 35px;
+    
     color: #e3e8ee;
+    transition: .5s;
 }
+.result:hover{
+    font-size: 36px;
+}
+
 .result p{
-    text-align: center;
-    font-weight: bold;
     padding: 2px;
     margin: 2px;
+    
+    font-weight: bold;
+    
+    text-align: center;
+    transition: .5s;
+}
+.result p:hover{
+    padding: 3px;
+    margin: 3px;
 }
 
 /*RPS*/
 .choices{
     margin-top: 50px 0;
+    
     text-align: center;
+    transition: .5s;
 }
+.choices:hover{
+    margin-top: 51px 0;
+}
+
 .choice{
     border: 4px solid #d6dbe0;
     border-radius: 90%;
+    
     margin: 0 16px;
     padding: 8px;
+    
     display: inline-block;
     transition: all .6s ease;
 }
 .choice:hover{
-    cursor: pointer;
     background: #56595d;
+    border-radius: 91%;
+    border: 5px solid #d6dbe0;
+    
+    margin: 0 17px;
+    padding: 9px;
+    
+    cursor: pointer;
 }
 
 /*ActM*/
 #action-message{
-    text-align: center;
-    color: #cbcfd2;
-    font-size: 16px;
     margin-top: 39px;
+    
+    font-size: 16px;
+    
+    color: #cbcfd2;
+    text-align: center;
+    transition: .5s;
+}
+#action-message:hover{
+    margin-top: 40px;
+    
+    font-size: 17px;
 }
 
 /*Lights*/
 .green-glow{
     border: 4px solid #82bf4f;
     box-shadow: 0 0 10px #426228;
+    
+    transition: .5s;
 }
+.green-glow:hover{
+    border: 5px solid #82bf4f;
+    box-shadow: 0 0 11px #426228;
+}
+
 .red-glow{
     border: 4px solid #cc5c5c;
     box-shadow: 0 0 10px #924545;
+    
+    transition: .5s;
 }
+.red-glow:hover{
+    border: 5px solid #cc5c5c;
+    box-shadow: 0 0 11px #924545;
+}
+
 .gray-glow{
     border: 4px solid #babfc5;
     box-shadow: 0 0 10px #7c7f83;
+    
+    transition: .5s;
+}
+.gray-glow:hover{
+    border: 5px solid #babfc5;
+    box-shadow: 0 0 11px #7c7f83;
 }
